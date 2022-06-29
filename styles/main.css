@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.structureHeader {
+	@apply h-24 md:h-24 lg:h-24 
+        grid grid-cols-1 md:grid-cols-3 
+        md:gap-x-4 lg:gap-6
+        mx-4 md:mx-6 lg:mx-10 items-center;
+}
