@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../buttons/Button'
 
 const Header = () => {
 	return (
@@ -9,6 +10,7 @@ const Header = () => {
 					alt='Logo Corporación Romero SCI'
 					className='h-16'
 				/>
+				<Button></Button>
 			</header>
 		</>
 	)
