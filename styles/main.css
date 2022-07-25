@@ -4,9 +4,58 @@
 @tailwind components;
 @tailwind utilities;
 
-.structureHeader {
-	@apply h-24 md:h-24 lg:h-24 
-        grid grid-cols-1 md:grid-cols-3 
-        md:gap-x-4 lg:gap-6
-        mx-4 md:mx-6 lg:mx-10 items-center;
+@layer components {
+	.section-container {
+		@apply mx-auto max-w-screen-3xl;
+	}
+	.header-structure {
+		@apply h-20 md:h-24 flex justify-between items-center;
+	}
+
+	.margin-responsive {
+		@apply px-4 md:px-6;
+	}
+
+	.button-ghost-primary {
+		@apply font-semibold h-10 rounded-xl border-primary-200 border-2 text-primary-500 px-4;
+	}
+
+	.link-ghost-primary {
+		@apply font-semibold h-10 rounded-xl border-primary-200 border-2 text-primary-500 px-4;
+	}
+
+	.link-ghost-dark {
+		@apply font-semibold h-10 rounded-xl border-dark-200 border-2 text-dark-600 px-4;
+	}
+
+	.link-light-dark {
+		@apply font-semibold h-10 rounded-xl text-dark-700 px-4;
+	}
+}
+
+:root {
+	--primary-050: 255, 235, 235;
+	--primary-100: 254, 205, 206;
+	--primary-200: 252, 156, 158;
+	--primary-300: 249, 98, 101;
+	--primary-400: 245, 71, 75;
+	--primary-500: 242, 58, 63;
+	--primary-600: 227, 43, 48;
+	--primary-700: 183, 36, 40;
+	--primary-800: 126, 32, 35;
+	--primary-900: 85, 27, 29;
+
+	--dark-050: 252, 252, 253;
+	--dark-100: 245, 245, 245;
+	--dark-200: 231, 232, 233;
+	--dark-300: 199, 200, 204;
+	--dark-400: 167, 168, 175;
+	--dark-500: 129, 131, 141;
+	--dark-600: 97, 98, 107;
+	--dark-700: 68, 69, 75;
+	--dark-800: 39, 39, 43;
+	--dark-900: 22, 22, 24;
+
+	--white: 255, 255, 255;
+	--black: 0, 0, 0;
 }
