@@ -4,8 +4,8 @@ import MenuIcon from '../icons/MenuIcon'
 const Header = () => {
 	return (
 		<>
-			<header className='section-container'>
-				<div className='header-structure margin-responsive'>
+			<header className='section-container border-b-2 border-dark-200'>
+				<div className='header-structure margin-responsive '>
 					<div>
 						<img
 							src='img/logo-default.svg'

@@ -21,7 +21,6 @@ module.exports = {
 		},
 		colors: {
 			primary: {
-				050: withOpacity('--primary-050'),
 				100: withOpacity('--primary-100'),
 				200: withOpacity('--primary-200'),
 				300: withOpacity('--primary-300'),
@@ -31,9 +30,9 @@ module.exports = {
 				700: withOpacity('--primary-700'),
 				800: withOpacity('--primary-800'),
 				900: withOpacity('--primary-900'),
+				950: withOpacity('--primary-950'),
 			},
 			dark: {
-				050: withOpacity('--dark-050'),
 				100: withOpacity('--dark-100'),
 				200: withOpacity('--dark-200'),
 				300: withOpacity('--dark-300'),
@@ -43,6 +42,7 @@ module.exports = {
 				700: withOpacity('--dark-700'),
 				800: withOpacity('--dark-800'),
 				900: withOpacity('--dark-900'),
+				950: withOpacity('--dark-950'),
 			},
 			basic: {
 				white: withOpacity('--white'),

@@ -571,32 +571,43 @@ video {
 .gap-6{
   gap: 1.5rem;
 }
+.border-b-2{
+  border-bottom-width: 2px;
+}
+.border-dark-100{
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--dark-100), var(--tw-border-opacity));
+}
+.border-dark-200{
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--dark-200), var(--tw-border-opacity));
+}
 .fill-dark-700{
   fill: rgba(var(--dark-700));
 }
 
 :root {
-	--primary-050: 255, 235, 235;
-	--primary-100: 254, 205, 206;
-	--primary-200: 252, 156, 158;
-	--primary-300: 249, 98, 101;
-	--primary-400: 245, 71, 75;
-	--primary-500: 242, 58, 63;
-	--primary-600: 227, 43, 48;
-	--primary-700: 183, 36, 40;
-	--primary-800: 126, 32, 35;
-	--primary-900: 85, 27, 29;
+	--primary-100: 255, 235, 235;
+	--primary-200: 254, 205, 206;
+	--primary-300: 252, 156, 158;
+	--primary-400: 249, 98, 101;
+	--primary-500: 245, 71, 75;
+	--primary-600: 242, 58, 63;
+	--primary-700: 227, 43, 48;
+	--primary-800: 183, 36, 40;
+	--primary-900: 126, 32, 35;
+	--primary-950: 85, 27, 29;
 
-	--dark-050: 252, 252, 253;
-	--dark-100: 245, 245, 245;
-	--dark-200: 231, 232, 233;
-	--dark-300: 199, 200, 204;
-	--dark-400: 167, 168, 175;
-	--dark-500: 129, 131, 141;
-	--dark-600: 97, 98, 107;
-	--dark-700: 68, 69, 75;
-	--dark-800: 39, 39, 43;
-	--dark-900: 22, 22, 24;
+	--dark-100: 252, 252, 253;
+	--dark-200: 245, 245, 245;
+	--dark-300: 231, 232, 233;
+	--dark-400: 199, 200, 204;
+	--dark-500: 167, 168, 175;
+	--dark-600: 129, 131, 141;
+	--dark-700: 97, 98, 107;
+	--dark-800: 68, 69, 75;
+	--dark-900: 39, 39, 43;
+	--dark-950: 22, 22, 24;
 
 	--white: 255, 255, 255;
 	--black: 0, 0, 0;
