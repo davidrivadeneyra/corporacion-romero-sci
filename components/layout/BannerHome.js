@@ -4,7 +4,7 @@ const BannerHome = () => {
 	return (
 		<>
 			<section className='w-full'>
-				<div className='margin-responsive section-container py-16 text-center'>
+				<div className='margin-responsive section-container py-20 text-center'>
 					<h1 className='font-headings text-dark-100 font-bold text-3xl leading-10 md:text-[2.5rem] lg:text-5xl text-center md:leading-[3.25rem] pb-6'>
 						Especialistas{' '}
 						<span className='text-primary-400 '>comprometidos</span>{' '}
@@ -16,9 +16,16 @@ const BannerHome = () => {
 						insuperable en sus esfuerzos pioneros para proporcionar
 						una mejor seguridad contra incendios en todo el país.
 					</p>
-					<button className='button-default-primary-base'>
+					<button className='button-default-primary-sm md:button-default-primary-base'>
 						Llámanos al 999 988 798
 					</button>
+					<div className='pt-12'>
+						<img
+							src='images/corporacion-romero-01.jpg'
+							alt='Foto de los trabajos que hace Corporación Romero SCI'
+							className='block rounded-lg'
+						/>
+					</div>
 				</div>
 			</section>
 		</>

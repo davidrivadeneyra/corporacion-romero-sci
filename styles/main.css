@@ -9,7 +9,7 @@
 		@apply mx-auto max-w-screen-3xl;
 	}
 	.header-structure {
-		@apply h-20 md:h-24 flex justify-between items-center;
+		@apply h-16 md:h-24 flex justify-between items-center;
 	}
 
 	.margin-responsive {
@@ -30,6 +30,10 @@
 
 	.button-default-primary-base {
 		@apply button-base bg-primary-500 text-basic-white;
+	}
+
+	.button-default-white-base {
+		@apply button-base bg-basic-white text-dark-950;
 	}
 
 	.button-default-dark-base {
@@ -56,6 +60,9 @@
 
 	.button-default-primary-sm {
 		@apply button-sm bg-primary-500 text-basic-white;
+	}
+	.button-default-white-sm {
+		@apply button-sm bg-basic-white text-dark-950;
 	}
 
 	.button-default-dark-sm {
