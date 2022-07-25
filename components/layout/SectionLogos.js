@@ -37,11 +37,11 @@ const SectionLogos = () => {
 					/>
 				</div>
 			</section>
-			<section className='w-full bg-dark-900 py-16'>
+			<section className='w-full bg-primary-800 py-16'>
 				<div className='margin-responsive section-container'>
-					<p className='text-base text-dark-400 text-center'>
+					<p className='text-base text-primary-100 text-center'>
 						Según el{' '}
-						<span className='text-dark-100'>
+						<span className='text-basic-white'>
 							{' '}
 							Cuerpo General de Bomberos Voluntarios{' '}
 						</span>{' '}

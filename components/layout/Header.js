@@ -21,13 +21,13 @@ const Header = () => {
 						</div>
 
 						<div className='hidden md:flex gap-6'>
-							<button className='button-link-dark-sm'>
+							<button className='button-link-dark-sm text-dark-400 hover:text-dark-100'>
 								<a href='#'>Nustros trabajos</a>
 							</button>
-							<button className='button-link-dark-sm'>
+							<button className='button-link-dark-sm text-dark-400 hover:text-dark-100'>
 								<a href='#'>Por qué elegirnos</a>
 							</button>
-							<button className='button-default-primary-sm'>
+							<button className='button-ghost-dark-sm border-dark-900 hover:bg-dark-900 hover:border-dark-800 text-dark-400 hover:text-dark-100'>
 								<a href='#'>Contáctanos</a>
 							</button>
 						</div>

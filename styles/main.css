@@ -29,7 +29,7 @@
 	/* Buttons default */
 
 	.button-default-primary-base {
-		@apply button-base bg-primary-500 text-basic-white;
+		@apply button-base bg-primary-700 text-basic-white hover:bg-primary-800;
 	}
 
 	.button-default-white-base {

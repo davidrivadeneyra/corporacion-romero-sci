@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BannerHome = () => {
+const LightBoxSection = () => {
 	return (
 		<>
 			<section className='w-full'>
@@ -33,4 +33,4 @@ const BannerHome = () => {
 	)
 }
 
-export default BannerHome
+export default LightBoxSection
