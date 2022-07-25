@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Modal = ({ clickedImg, handleRotationRight, setClickedImg }) => {
+const Modal = ({
+	clickedImg,
+	handleRotationRight,
+	handleRotationLeft,
+	setClickedImg,
+}) => {
 	const handleClick = (e) => {
-		if (e.target.classList.contains('dismis')) {
+		if (e.target.classList.contains('dismiss')) {
 			setClickedImg(null)
 		}
 	}
@@ -11,7 +16,8 @@ const Modal = ({ clickedImg, handleRotationRight, setClickedImg }) => {
 		<>
 			<div className='dismiss' onClick={handleClick}>
 				<img src={clickedImg} alt='un texto' />
-				<span className='dismiss'>X</span>
+				<span className='dismiss'>{'x'}</span>
+				<div onClick={handleRotationLeft}> {'>'} </div>
 				<div onClick={handleRotationRight}> {'>'} </div>
 			</div>
 		</>

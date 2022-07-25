@@ -29,6 +29,23 @@ const LightBoxSection = () => {
 		setCurrentIndex(newIndex)
 	}
 
+	const handleRotationLeft = () => {
+		const totalLength = data.data.length
+		if (currentIndex === 0) {
+			setCurrentIndex(totalLength - 1)
+			const newUrl = data.data[totalLength - 1].link
+			setClickedImg(newUrl)
+			return
+		}
+		const newIndex = currentIndex - 1
+		const newUrl = data.data.filter((item) => {
+			return data.data.indexOf(item) === newIndex
+		})
+		const newItem = newUrl[0].link
+		setClickedImg(newItem)
+		setCurrentIndex(newIndex)
+	}
+
 	return (
 		<>
 			<div>
@@ -48,6 +65,7 @@ const LightBoxSection = () => {
 							clickedImg={clickedImg}
 							handleRotationRight={handleRotationRight}
 							setClickedImg={setClickedImg}
+							handleRotationLeft={handleRotationLeft}
 						/>
 					)}
 				</div>
