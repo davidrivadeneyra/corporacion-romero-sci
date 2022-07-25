@@ -1,34 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
+import data from '../data/images.json'
+import Modal from './Modal.js'
 
 const LightBoxSection = () => {
+	const [clickedImg, setClickedImg] = useState(null)
+	const [currentIndex, setCurrentIndex] = useState(null)
+
+	const handleClick = (item, index) => {
+		setCurrentIndex(index)
+		setClickedImg(item.link)
+	}
+
+	const handleRotationRight = () => {
+		const totalLength = data.data.length
+		if (currentIndex + 1 >= totalLength) {
+			setCurrentIndex(0)
+			const newUrl = data.data[0].link
+			setClickedImg(newUrl)
+			return
+		}
+
+		const newIndex = currentIndex + 1
+		const newUrl = data.data.filter((item) => {
+			return data.data.indexOf(item) === newIndex
+		})
+		const newItem = newUrl[0].link
+		setClickedImg(newItem)
+		setCurrentIndex(newIndex)
+	}
+
 	return (
 		<>
-			<section className='w-full'>
-				<div className='margin-responsive section-container py-20 text-center'>
-					<h1 className='font-headings text-dark-500 font-bold text-3xl leading-10 md:text-[2.5rem] lg:text-5xl text-center md:leading-[3.25rem] pb-6'>
-						<span className='text-basic-white '>
-							Especialistas comprometidos
-						</span>{' '}
-						con tu seguridad
-					</h1>
-					<p className='text-dark-500 text-center pb-8'>
-						Con productos de calidad, innovación constante y
-						excelente atención al cliente, CORPORACION ROMERO SCI es
-						insuperable en sus esfuerzos pioneros para proporcionar
-						una mejor seguridad contra incendios en todo el país.
-					</p>
-					<button className='button-default-primary-sm md:button-default-primary-base'>
-						Llámanos al 999 988 798
-					</button>
-					<div className='pt-12'>
+			<div>
+				{data.data.map((item, index) => (
+					<div key={index} className=''>
 						<img
-							src='images/corporacion-romero-01.jpg'
-							alt='Foto de los trabajos que hace Corporación Romero SCI'
-							className='block rounded-lg'
+							src={item.link}
+							alt={item.text}
+							onClick={() => handleClick(item, index)}
 						/>
+						<h2>{item.text}</h2>
 					</div>
+				))}
+				<div>
+					{clickedImg && (
+						<Modal
+							clickedImg={clickedImg}
+							handleRotationRight={handleRotationRight}
+							setClickedImg={setClickedImg}
+						/>
+					)}
 				</div>
-			</section>
+			</div>
 		</>
 	)
 }
