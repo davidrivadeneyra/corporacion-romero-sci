@@ -732,6 +732,9 @@ html{
   --tw-text-opacity: 1;
   color: rgba(var(--primary-100), var(--tw-text-opacity));
 }
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 
 :root {
 	--primary-100: 255, 235, 235;
