@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&family=Work+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap');
 
 /*
 ! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
@@ -541,26 +541,50 @@ video {
     padding-right: 1.5rem;
   }
 }
-.link-ghost-primary{
+/* Buttons base */
+/* Buttons default */
+.button-default-primary-base{
+  height: 3rem;
+  border-radius: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--primary-500), var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(var(--white), var(--tw-text-opacity));
+}
+/* Buttons sm */
+.button-ghost-primary-sm{
   height: 2.5rem;
   border-radius: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgba(var(--primary-200), var(--tw-border-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgba(var(--primary-500), var(--tw-text-opacity));
+  color: rgba(var(--primary-600), var(--tw-text-opacity));
 }
-.link-light-dark{
+.button-link-dark-sm{
   height: 2.5rem;
   border-radius: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgba(var(--dark-700), var(--tw-text-opacity));
+}
+html{
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--dark-950), var(--tw-bg-opacity));
 }
 .hidden{
   display: none;
@@ -568,22 +592,100 @@ video {
 .h-10{
   height: 2.5rem;
 }
+.w-full{
+  width: 100%;
+}
 .gap-6{
   gap: 1.5rem;
 }
 .border-b-2{
   border-bottom-width: 2px;
 }
-.border-dark-100{
+.border-dark-900{
   --tw-border-opacity: 1;
-  border-color: rgba(var(--dark-100), var(--tw-border-opacity));
+  border-color: rgba(var(--dark-900), var(--tw-border-opacity));
 }
-.border-dark-200{
-  --tw-border-opacity: 1;
-  border-color: rgba(var(--dark-200), var(--tw-border-opacity));
+.bg-dark-950{
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--dark-950), var(--tw-bg-opacity));
 }
 .fill-dark-700{
   fill: rgba(var(--dark-700));
+}
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+.pb-8{
+  padding-bottom: 2rem;
+}
+.text-center{
+  text-align: center;
+}
+.font-headings{
+  font-family: Sora, sans-serif;
+}
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.font-semibold{
+  font-weight: 600;
+}
+.font-bold{
+  font-weight: 700;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.leading-\[3\.25rem\]{
+  line-height: 3.25rem;
+}
+.leading-9{
+  line-height: 2.25rem;
+}
+.leading-10{
+  line-height: 2.5rem;
+}
+.text-dark-100{
+  --tw-text-opacity: 1;
+  color: rgba(var(--dark-100), var(--tw-text-opacity));
+}
+.text-dark-600{
+  --tw-text-opacity: 1;
+  color: rgba(var(--dark-600), var(--tw-text-opacity));
+}
+.text-dark-500{
+  --tw-text-opacity: 1;
+  color: rgba(var(--dark-500), var(--tw-text-opacity));
+}
+.text-primary-600{
+  --tw-text-opacity: 1;
+  color: rgba(var(--primary-600), var(--tw-text-opacity));
+}
+.text-primary-400{
+  --tw-text-opacity: 1;
+  color: rgba(var(--primary-400), var(--tw-text-opacity));
+}
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.underline-offset-8{
+  text-underline-offset: 8px;
+}
+.underline-offset-4{
+  text-underline-offset: 4px;
 }
 
 :root {
@@ -629,5 +731,31 @@ video {
 
   .md\:h-16{
     height: 4rem;
+  }
+
+  .md\:text-\[2\.5rem\]{
+    font-size: 2.5rem;
+  }
+
+  .md\:leading-\[3\.25rem\]{
+    line-height: 3.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .lg\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }

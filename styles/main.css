@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&family=Work+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,20 +16,70 @@
 		@apply px-4 md:px-6;
 	}
 
-	.button-ghost-primary {
-		@apply font-semibold h-10 rounded-xl border-primary-200 border-2 text-primary-500 px-4;
+	/* Buttons base */
+
+	.button-base {
+		@apply font-medium text-base h-12 rounded-xl px-6;
 	}
 
-	.link-ghost-primary {
-		@apply font-semibold h-10 rounded-xl border-primary-200 border-2 text-primary-500 px-4;
+	.button-sm {
+		@apply font-medium text-sm h-10 rounded-xl px-4;
 	}
 
-	.link-ghost-dark {
-		@apply font-semibold h-10 rounded-xl border-dark-200 border-2 text-dark-600 px-4;
+	/* Buttons default */
+
+	.button-default-primary-base {
+		@apply button-base bg-primary-500 text-basic-white;
 	}
 
-	.link-light-dark {
-		@apply font-semibold h-10 rounded-xl text-dark-700 px-4;
+	.button-default-dark-base {
+		@apply button-base bg-dark-900 text-basic-white;
+	}
+
+	.button-ghost-primary-base {
+		@apply button-base border-primary-200 border-2 text-primary-600;
+	}
+
+	.button-ghost-dark-base {
+		@apply button-base border-dark-300 border-2 text-dark-700;
+	}
+
+	.button-link-primary-base {
+		@apply button-base text-primary-600;
+	}
+
+	.button-link-dark-base {
+		@apply button-base text-dark-700;
+	}
+
+	/* Buttons sm */
+
+	.button-default-primary-sm {
+		@apply button-sm bg-primary-500 text-basic-white;
+	}
+
+	.button-default-dark-sm {
+		@apply button-sm bg-dark-900 text-basic-white;
+	}
+
+	.button-ghost-primary-sm {
+		@apply button-sm border-primary-200 border-2 text-primary-600;
+	}
+
+	.button-ghost-dark-sm {
+		@apply button-sm border-dark-300 border-2 text-dark-700;
+	}
+
+	.button-link-primary-sm {
+		@apply button-sm text-primary-600;
+	}
+
+	.button-link-dark-sm {
+		@apply button-sm text-dark-700;
+	}
+
+	html {
+		@apply bg-dark-950;
 	}
 }
 
