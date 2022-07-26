@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,14 +16,62 @@
 		@apply px-4 md:px-6;
 	}
 
+	.title-h1-desktop {
+		@apply font-headings font-bold text-[3rem] leading-[3.5rem] uppercase;
+	}
+	.title-h2-desktop {
+		@apply font-headings font-bold text-[2rem] leading-[2.5rem] uppercase;
+	}
+	.title-h3-desktop {
+		@apply font-headings font-bold text-[1.5rem] leading-[2rem] uppercase;
+	}
+	.title-h4-desktop {
+		@apply font-headings font-bold text-[1.25rem] leading-[1.5rem] uppercase;
+	}
+	.title-h1-movil {
+		@apply font-headings font-bold text-[2rem] leading-[2.5rem] uppercase;
+	}
+	.title-h2-movil {
+		@apply font-headings font-bold text-[1.75rem] leading-[2rem] uppercase;
+	}
+	.title-h3-movil {
+		@apply font-headings font-bold text-[1rem] leading-[1.25rem] uppercase;
+	}
+
+	.p-xl {
+		@apply font-sans font-normal text-[1.2rem] leading-[160%];
+	}
+	.p-base {
+		@apply font-sans font-normal text-[1rem] leading-[160%];
+	}
+	.p-sm {
+		@apply font-sans font-normal text-[0.875rem] leading-[160%];
+	}
+	.p-xs {
+		@apply font-sans font-normal text-[0.75rem] leading-[160%];
+	}
+
+	.button-text-xl {
+		@apply font-sans font-semibold text-[1.2rem] leading-[160%];
+	}
+	.button-text-base {
+		@apply font-sans font-semibold text-[1rem] leading-[160%];
+	}
+	.button-text-sm {
+		@apply font-sans font-medium text-[0.875rem] leading-[160%];
+	}
+	.button-text-xs {
+		@apply font-sans font-medium text-[0.75rem] leading-[160%];
+	}
+
 	/* Buttons base */
 
 	.button-base {
-		@apply font-medium text-base h-12 rounded-xl px-6;
+		@apply button-text-base h-12 rounded-xl px-6;
 	}
 
 	.button-sm {
-		@apply font-medium text-sm h-10 rounded-xl px-4;
+		@apply button-text-sm h-10 rounded-xl px-4;
 	}
 
 	/* Buttons default */
@@ -38,6 +86,9 @@
 
 	.button-default-dark-base {
 		@apply button-base bg-dark-900 text-basic-white;
+	}
+	.button-default-yellow-base {
+		@apply button-base bg-yellow-500 hover:bg-yellow-600  text-yellow-950;
 	}
 
 	.button-ghost-primary-base {
@@ -68,6 +119,9 @@
 	.button-default-dark-sm {
 		@apply button-sm bg-dark-900 text-basic-white;
 	}
+	.button-default-yellow-sm {
+		@apply button-sm bg-yellow-500 hover:bg-yellow-600 text-yellow-950;
+	}
 
 	.button-ghost-primary-sm {
 		@apply button-sm border-primary-200 border-2 text-primary-600;
@@ -88,6 +142,10 @@
 	html {
 		@apply bg-dark-950;
 	}
+
+	.colums-photos {
+		@apply columns;
+	}
 }
 
 :root {
@@ -103,15 +161,23 @@
 	--primary-950: 85, 27, 29;
 
 	--dark-100: 252, 252, 253;
-	--dark-200: 245, 245, 245;
-	--dark-300: 231, 232, 233;
-	--dark-400: 199, 200, 204;
-	--dark-500: 167, 168, 175;
-	--dark-600: 129, 131, 141;
-	--dark-700: 97, 98, 107;
-	--dark-800: 68, 69, 75;
-	--dark-900: 39, 39, 43;
-	--dark-950: 22, 22, 24;
+	--dark-200: 245, 245, 246;
+	--dark-300: 230, 230, 234;
+	--dark-400: 195, 195, 208;
+	--dark-500: 156, 156, 186;
+	--dark-600: 115, 115, 156;
+	--dark-700: 86, 86, 118;
+	--dark-800: 56, 56, 87;
+	--dark-900: 32, 32, 50;
+	--dark-950: 17, 17, 29;
+
+	--yellow-400: 255, 222, 136;
+	--yellow-500: 255, 212, 100;
+	--yellow-600: 231, 184, 65;
+	--yellow-700: 204, 158, 38;
+	--yellow-800: 136, 105, 26;
+	--yellow-900: 80, 64, 22;
+	--yellow-950: 38, 32, 15;
 
 	--white: 255, 255, 255;
 	--black: 0, 0, 0;

@@ -39,7 +39,7 @@ const SectionLogos = () => {
 			</section>
 			<section className='w-full bg-primary-800 py-16'>
 				<div className='margin-responsive section-container'>
-					<p className='text-base text-primary-100 text-center'>
+					<p className='p-xl text-primary-100 text-center'>
 						Según el{' '}
 						<span className='text-basic-white'>
 							{' '}

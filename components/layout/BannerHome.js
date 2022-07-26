@@ -4,20 +4,20 @@ const BannerHome = () => {
 	return (
 		<>
 			<section className='w-full'>
-				<div className='margin-responsive section-container py-20 text-center'>
-					<h1 className='font-headings text-dark-500 font-bold text-3xl leading-10 md:text-[2.5rem] lg:text-5xl text-center md:leading-[3.25rem] pb-6'>
+				<div className='margin-responsive section-container py-24 text-center'>
+					<h1 className='title-h1-movil md:title-h1-desktop  text-dark-500 ext-center pb-4'>
 						<span className='text-basic-white '>
 							Especialistas comprometidos
 						</span>{' '}
 						con tu seguridad
 					</h1>
-					<p className='text-dark-500 text-center pb-8'>
+					<p className='p-sm md:p-base text-dark-400 text-center pb-8'>
 						Con productos de calidad, innovación constante y
 						excelente atención al cliente, CORPORACION ROMERO SCI es
 						insuperable en sus esfuerzos pioneros para proporcionar
 						una mejor seguridad contra incendios en todo el país.
 					</p>
-					<button className='button-default-primary-sm md:button-default-primary-base'>
+					<button className='button-default-yellow-sm md:button-default-yellow-base'>
 						Llámanos al 999 988 798
 					</button>
 					<div className='pt-12'>

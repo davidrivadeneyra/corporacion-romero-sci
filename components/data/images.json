@@ -2,11 +2,59 @@
 	"data": [
 		{
 			"text": "Descripción del la imagen 01",
-			"link": "/images/cr-images/01.jpg"
+			"link": "/images/cr-images/01.jpeg"
 		},
 		{
 			"text": "Descripción del la imagen 02",
-			"link": "/images/cr-images/02.jpg"
+			"link": "/images/cr-images/02.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 02",
+			"link": "/images/cr-images/03.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 02",
+			"link": "/images/cr-images/04.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 02",
+			"link": "/images/cr-images/05.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 02",
+			"link": "/images/cr-images/06.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 02",
+			"link": "/images/cr-images/07.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 08",
+			"link": "/images/cr-images/08.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 08",
+			"link": "/images/cr-images/09.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 08",
+			"link": "/images/cr-images/10.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 08",
+			"link": "/images/cr-images/11.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 08",
+			"link": "/images/cr-images/12.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 08",
+			"link": "/images/cr-images/13.jpeg"
+		},
+		{
+			"text": "Descripción del la imagen 08",
+			"link": "/images/cr-images/14.jpeg"
 		}
 	]
 }
