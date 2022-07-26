@@ -48,20 +48,24 @@ const LightBoxSection = () => {
 
 	return (
 		<>
-			<div>
+			<div className='columns-2 md:columns-xs gap-2 section-container margin-responsive pb-24'>
 				{data.data.map((item, index) => (
-					<div key={index} className=''>
+					<div
+						key={index}
+						className='cursor-pointer overflow-hidden mb-2 rounded'>
 						<img
 							src={item.link}
 							alt={item.text}
 							onClick={() => handleClick(item, index)}
+							className='max-w-full block transition duration-1000 hover:scale-125'
 						/>
-						<h2>{item.text}</h2>
+						{/* <h2>{item.text}</h2> */}
 					</div>
 				))}
-				<div>
+				<div className='transition ease-in-out'>
 					{clickedImg && (
 						<Modal
+							className=''
 							clickedImg={clickedImg}
 							handleRotationRight={handleRotationRight}
 							setClickedImg={setClickedImg}

@@ -16,8 +16,8 @@ module.exports = {
 			'screen-3xl': 1400,
 		},
 		fontFamily: {
-			sans: ['Work Sans', 'sans-serif'],
-			headings: ['Sora', 'sans-serif'],
+			sans: ['Poppins', 'sans-serif'],
+			headings: ['Lexend', 'sans-serif'],
 		},
 		colors: {
 			primary: {
@@ -43,6 +43,15 @@ module.exports = {
 				800: withOpacity('--dark-800'),
 				900: withOpacity('--dark-900'),
 				950: withOpacity('--dark-950'),
+			},
+			yellow: {
+				400: withOpacity('--yellow-400'),
+				500: withOpacity('--yellow-500'),
+				600: withOpacity('--yellow-600'),
+				700: withOpacity('--yellow-700'),
+				800: withOpacity('--yellow-800'),
+				900: withOpacity('--yellow-900'),
+				950: withOpacity('--yellow-950'),
 			},
 			basic: {
 				white: withOpacity('--white'),
