@@ -16,8 +16,11 @@
 		@apply px-4 md:px-6;
 	}
 
-	.title-h1-desktop {
+	.title-big-desktop {
 		@apply font-headings font-bold text-[3rem] leading-[3.5rem] uppercase;
+	}
+	.title-h1-desktop {
+		@apply font-headings font-bold text-[2.5rem] leading-[3rem] uppercase;
 	}
 	.title-h2-desktop {
 		@apply font-headings font-bold text-[2rem] leading-[2.5rem] uppercase;

@@ -5,7 +5,7 @@ const BannerHome = () => {
 		<>
 			<section className='w-full bg-gradient-to-b from-dark-950 to-dark-900'>
 				<div className='margin-responsive section-container py-24 text-center relative bg-fixed'>
-					<h1 className='title-h1-movil md:title-h1-desktop   text-center pb-4 text-basic-white '>
+					<h1 className='title-h1-movil md:title-big-desktop   text-center pb-4 text-basic-white '>
 						<span className='text-dark-500'>
 							Somos especialistas <br />
 						</span>{' '}
