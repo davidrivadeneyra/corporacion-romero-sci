@@ -72,6 +72,11 @@ const OurProducts = () => {
 							</ul>
 						</div>
 					</div>
+					<img
+						src='images/cr-adornos.png'
+						alt=''
+						className='w-full mt-10'
+					/>
 				</div>
 			</section>
 		</>
