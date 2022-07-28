@@ -626,9 +626,11 @@ html{
   --tw-bg-opacity: 1;
   background-color: rgba(var(--dark-950), var(--tw-bg-opacity));
 }
-/*.bg-fixed {
-		@apply bg-[url('/images/bg-fixed.svg')] bg-cover bg-center;
-	} */
+.bg-fixed{
+  background-image: url('/images/bg-fixed.svg');
+  background-size: cover;
+  background-position: center;
+}
 .fixed{
   position: fixed;
 }

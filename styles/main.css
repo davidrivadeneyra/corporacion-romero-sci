@@ -154,9 +154,9 @@
 		@apply columns;
 	}
 
-	/*.bg-fixed {
+	.bg-fixed {
 		@apply bg-[url('/images/bg-fixed.svg')] bg-cover bg-center;
-	} */
+	}
 }
 
 :root {
