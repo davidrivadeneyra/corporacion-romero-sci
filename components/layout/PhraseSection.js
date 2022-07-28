@@ -11,9 +11,9 @@ const PhraseSection = () => {
 						className='pb-4 h-16'
 					/>
 					<p className='p-xl md:p-xxl italic text-dark-400 pb-4'>
-						"Cuanto más te involucres con los clientes, las cosas
-						serán más claras y más fácil será determinar lo que
-						debería estar haciendo con ellos"
+						&quot;Cuanto más te involucres con los clientes, las
+						cosas serán más claras y más fácil será determinar lo
+						que debería estar haciendo con ellos&quot;
 					</p>
 					<p className='p-xl md:p-xxl font-semibold italic text-dark-100'>
 						Jhon Russell
