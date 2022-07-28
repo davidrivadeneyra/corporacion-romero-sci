@@ -1,5 +1,6 @@
 import React from 'react'
 import MenuIcon from '../icons/MenuIcon'
+import Link from 'next/link'
 
 const Header = () => {
 	return (
@@ -8,18 +9,20 @@ const Header = () => {
 				<div className='section-container'>
 					<div className='header-structure margin-responsive '>
 						<div>
-							<a href='/'>
+							<Link href='/'>
 								<img
 									src='img/cr-logo-medium-light.svg'
 									alt='Logo Corporación Romero SCI'
-									className='hidden md:block md:h-16'
+									className='hidden md:block md:h-16 cursor-pointer'
 								/>
+							</Link>
+							<Link href='/'>
 								<img
 									src='img/cr-logo-small-light.svg'
 									alt='Logo Corporación Romero SCI'
-									className='h-8 md:hidden'
+									className='h-8 md:hidden cursor-pointer'
 								/>
-							</a>
+							</Link>
 						</div>
 
 						<div className='hidden md:flex gap-6'>
@@ -27,7 +30,9 @@ const Header = () => {
 								<a href='#'>Nustros trabajos</a>
 							</button>
 							<button className='button-link-dark-sm text-dark-400 hover:text-dark-100'>
-								<a href='/nosotros'>Por qué elegirnos</a>
+								<Link href='/nosotros'>
+									<a>Por qué elegirnos</a>
+								</Link>
 							</button>
 							<button className='button-ghost-dark-sm border-dark-900 hover:bg-dark-900 hover:border-dark-800 text-dark-400 hover:text-dark-100'>
 								<a href='#'>Contáctanos</a>
