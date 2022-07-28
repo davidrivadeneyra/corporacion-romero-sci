@@ -4,8 +4,8 @@ const BannerNosotros = () => {
 	return (
 		<>
 			<section className='w-full bg-gradient-to-b from-dark-950 to-dark-900'>
-				<div className='margin-responsive section-container py-24 flex'>
-					<div>
+				<div className='margin-responsive section-container py-24 columns-1 lg:grid grid-cols-2 lg:items-center gap-6'>
+					<div className='text-center lg:text-left'>
 						<h1 className='title-h1-movil md:title-h1-desktop pb-4 text-basic-white '>
 							<span className='text-dark-500'>
 								Comprometidos con <br />
@@ -21,12 +21,11 @@ const BannerNosotros = () => {
 							Llámanos al 999 988 798
 						</button>
 					</div>
-
-					<div className='pt-10'>
+					<div className=''>
 						<img
 							src='images/cr-nosotros.png'
 							alt='Foto de los trabajos que hace Corporación Romero SCI'
-							className='block rounded-lg'
+							className='w-full rounded-lg mt-6 lg:mt-0'
 						/>
 					</div>
 				</div>
