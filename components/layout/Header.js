@@ -11,7 +11,7 @@ const Header = () => {
 						<div>
 							<Link href='/'>
 								<img
-									src='img/cr-logo-medium-light.svg'
+									src='img/cr-logo-small-dark.svg'
 									alt='Logo Corporación Romero SCI'
 									className='hidden md:block md:h-16 cursor-pointer'
 								/>

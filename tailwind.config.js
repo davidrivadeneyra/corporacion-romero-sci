@@ -45,6 +45,9 @@ module.exports = {
 				950: withOpacity('--dark-950'),
 			},
 			yellow: {
+				100: withOpacity('--yellow-100'),
+				200: withOpacity('--yellow-200'),
+				300: withOpacity('--yellow-300'),
 				400: withOpacity('--yellow-400'),
 				500: withOpacity('--yellow-500'),
 				600: withOpacity('--yellow-600'),
