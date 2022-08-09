@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Header = () => {
 	return (
 		<>
-			<header className='w-full border-b-2 border-dark-900 bg-dark-950'>
+			<header className='w-full border-b-2 border-dark-200 bg-basic-white'>
 				<div className='section-container'>
 					<div className='header-structure margin-responsive '>
 						<div>
@@ -18,7 +18,7 @@ const Header = () => {
 							</Link>
 							<Link href='/'>
 								<img
-									src='img/cr-logo-small-light.svg'
+									src='img/cr-logo-small-dark.svg'
 									alt='Logo Corporación Romero SCI'
 									className='h-8 md:hidden cursor-pointer'
 								/>

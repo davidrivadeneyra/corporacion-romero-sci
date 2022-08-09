@@ -3,15 +3,13 @@ import React from 'react'
 const BannerHome = () => {
 	return (
 		<>
-			<section className='w-full bg-gradient-to-b from-dark-950 to-dark-900'>
+			<section className='w-full bg-yellow-100'>
 				<div className='margin-responsive section-container py-24 text-center relative bg-fixed'>
-					<h1 className='title-h1-movil md:title-big-desktop   text-center pb-4 text-basic-white '>
-						<span className='text-dark-500'>
-							Somos especialistas <br />
-						</span>{' '}
-						comprometidos con tu seguridad
+					<h1 className='title-h1-movil md:title-big-desktop   text-center pb-4 text-yellow-900 '>
+						Somos especialistas comprometidos <br />
+						con tu seguridad
 					</h1>
-					<p className='p-sm md:p-base text-dark-400 text-center pb-8'>
+					<p className='p-sm md:p-base text-yellow-800 text-center pb-8'>
 						Con productos de calidad, innovación constante y
 						excelente atención al cliente, CORPORACION ROMERO SCI es
 						insuperable en sus esfuerzos pioneros para proporcionar
@@ -22,7 +20,7 @@ const BannerHome = () => {
 					</button>
 					<div className='flex justify-center pt-10'>
 						<img
-							src='images/cr-extintor.png'
+							src='images/cr-banner.png'
 							alt='Foto de los trabajos que hace Corporación Romero SCI'
 							className='block rounded-lg'
 						/>

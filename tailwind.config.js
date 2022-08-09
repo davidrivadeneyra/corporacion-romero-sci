@@ -17,7 +17,7 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: ['Poppins', 'sans-serif'],
-			headings: ['Lexend', 'sans-serif'],
+			headings: ['Poppins', 'sans-serif'],
 		},
 		colors: {
 			primary: {
