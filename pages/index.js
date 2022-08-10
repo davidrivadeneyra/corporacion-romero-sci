@@ -3,7 +3,8 @@ import Head from 'next/head'
 import Header from '../components/layout/Header'
 import BannerHome from '../components/layout/BannerHome'
 import SectionLogos from '../components/layout/SectionLogos'
-import LightBoxSection from '../components/layout/LightBoxSection'
+import LightBoxServicesUp from '../components/layout/LightBoxServicesUp'
+import LightBoxServicesDown from '../components/layout/LightBoxServicesDown'
 import LightBoxTile from '../components/layout/LightBoxTile'
 import OurProducts from '../components/layout/OurProducts'
 import PhraseSection from '../components/layout/PhraseSection'
@@ -17,10 +18,11 @@ export default function Home() {
 			<Header></Header>
 			<BannerHome></BannerHome>
 			<SectionLogos></SectionLogos>
+			<LightBoxServicesUp></LightBoxServicesUp>
 			<LightBoxTile></LightBoxTile>
-			<LightBoxSection></LightBoxSection>
-			<PhraseSection></PhraseSection>
-			<OurProducts></OurProducts>
+			<LightBoxServicesDown></LightBoxServicesDown>
+			{/* <PhraseSection></PhraseSection>
+			<OurProducts></OurProducts> */}
 			<Footer></Footer>
 		</>
 	)

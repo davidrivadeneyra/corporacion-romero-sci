@@ -1,0 +1,20 @@
+{
+	"data": [
+		{
+			"text": "Descripción del la imagen 01",
+			"link": "/images/cr-images/cr-imagen-01.jpg"
+		},
+		{
+			"text": "Descripción del la imagen 02",
+			"link": "/images/cr-images/cr-imagen-02.jpg"
+		},
+		{
+			"text": "Descripción del la imagen 03",
+			"link": "/images/cr-images/cr-imagen-03.jpg"
+		},
+		{
+			"text": "Descripción del la imagen 04",
+			"link": "/images/cr-images/cr-imagen-04.jpg"
+		}
+	]
+}

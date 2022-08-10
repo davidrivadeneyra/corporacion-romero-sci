@@ -3,7 +3,7 @@ import React from 'react'
 const SectionLogos = () => {
 	return (
 		<>
-			<section className='w-full bg-dark-200'>
+			{/* <section className='w-full bg-dark-200'>
 				<div className='margin-responsive section-container py-12 flex flex-wrap justify-center gap-x-6 gap-y-2 lg:gap-10'>
 					<img
 						src='images/logos/buckeye-small.png'
@@ -36,7 +36,7 @@ const SectionLogos = () => {
 						className='w-24 lg:w-32'
 					/>
 				</div>
-			</section>
+			</section> */}
 			<section className='w-full bg-primary-800 py-16'>
 				<div className='margin-responsive section-container'>
 					<p className='p-xl text-primary-100 text-center'>
