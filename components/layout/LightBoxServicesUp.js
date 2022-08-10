@@ -50,14 +50,12 @@ const LightBoxServicesUp = () => {
 		<>
 			<section className='flex section-container bg-dark-200'>
 				{data.data.map((item, index) => (
-					<div
-						key={index}
-						className='cursor-pointer overflow-hidden bg-dark-200'>
+					<div key={index} className='cursor-pointer overflow-hidden'>
 						<img
 							src={item.link}
 							alt={item.text}
 							onClick={() => handleClick(item, index)}
-							className='max-w-full block transition duration-1000 hover:scale-125 bg-dark-200'
+							className='max-w-full block transition duration-1000 hover:scale-125'
 						/>
 					</div>
 				))}
