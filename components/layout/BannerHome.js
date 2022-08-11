@@ -28,7 +28,7 @@ const BannerHome = () => {
 				</div>
 			</section>
 			<section className='w-full pt-[100px]'>
-				<div className='margin-responsive section-container'>
+				<div className='section-container'>
 					<img
 						src='images/cr-photo-capacitacion.png'
 						alt='Foto de los trabajos que hace Corporación Romero SCI'

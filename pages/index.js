@@ -21,8 +21,6 @@ export default function Home() {
 			<LightBoxServicesUp></LightBoxServicesUp>
 			<LightBoxTile></LightBoxTile>
 			<LightBoxServicesDown></LightBoxServicesDown>
-			{/* <PhraseSection></PhraseSection>
-			<OurProducts></OurProducts> */}
 			<Footer></Footer>
 		</>
 	)

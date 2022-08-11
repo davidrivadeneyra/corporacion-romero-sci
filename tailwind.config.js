@@ -11,7 +11,11 @@ module.exports = {
 	// content: ['./src/**/*.{html,js}'],
 	content: ['./pages/**/*.{html,js}', './components/**/*.{html,js}'],
 	theme: {
-		extend: {},
+		extend: {
+			content: {
+				'icon-list': 'url("icons/check-alt.svg")',
+			},
+		},
 		maxWidth: {
 			'screen-3xl': 1400,
 		},
