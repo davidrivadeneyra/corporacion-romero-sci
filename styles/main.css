@@ -57,10 +57,10 @@
 		@apply font-sans font-normal text-[1rem] leading-[160%];
 	}
 	.p-sm {
-		@apply font-sans font-normal text-[0.875rem] leading-[160%];
+		@apply font-sans font-normal text-[0.875rem] leading-[170%];
 	}
 	.p-xs {
-		@apply font-sans font-normal text-[0.75rem] leading-[160%];
+		@apply font-sans font-normal text-[0.75rem] leading-[170%];
 	}
 
 	.button-text-xl {

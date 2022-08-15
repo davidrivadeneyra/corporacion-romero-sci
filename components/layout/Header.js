@@ -26,17 +26,24 @@ const Header = () => {
 						</div>
 
 						<div className='hidden md:flex gap-6'>
-							<button className='button-link-dark-sm text-dark-400 hover:text-dark-100'>
-								<a href='#'>Nustros trabajos</a>
-							</button>
-							<button className='button-link-dark-sm text-dark-400 hover:text-dark-100'>
-								<Link href='/nosotros'>
-									<a>Por qué elegirnos</a>
+							<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+								<Link href='/socios-estrategicos'>
+									<a>Socios estrategicos</a>
 								</Link>
 							</button>
-							<button className='button-ghost-dark-sm border-dark-900 hover:bg-dark-900 hover:border-dark-800 text-dark-400 hover:text-dark-100'>
-								<a href='#'>Contáctanos</a>
+							<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+								<Link href='/nuestras-instalaciones'>
+									<a>Nuestras instalaciones</a>
+								</Link>
 							</button>
+							<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+								<Link href='/marcas'>
+									<a>Marcas representativas</a>
+								</Link>
+							</button>
+							{/* <button className='button-ghost-dark-sm border-dark-900 hover:bg-dark-900 hover:border-dark-800 text-dark-400 hover:text-dark-100'>
+								<a href='#'>Contáctanos</a>
+							</button> */}
 						</div>
 						<div className='flex items-center md:hidden'>
 							<button>
