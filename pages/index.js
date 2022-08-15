@@ -6,8 +6,6 @@ import SectionLogos from '../components/layout/SectionLogos'
 import LightBoxServicesUp from '../components/layout/LightBoxServicesUp'
 import LightBoxServicesDown from '../components/layout/LightBoxServicesDown'
 import LightBoxTile from '../components/layout/LightBoxTile'
-import OurProducts from '../components/layout/OurProducts'
-import PhraseSection from '../components/layout/PhraseSection'
 import Footer from '../components/layout/Footer'
 
 export default function Home() {

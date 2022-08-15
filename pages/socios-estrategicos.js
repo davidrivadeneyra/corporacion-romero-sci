@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
-import BannerNuestrasInstalaciones from '../components/layout/BannerNuestrasInstalaciones'
+import BannerSociosEstrategicos from '../components/layout/BannerSociosEstrategicos'
 
 export default function Home() {
 	return (
@@ -10,7 +10,7 @@ export default function Home() {
 			<Head></Head>
 
 			<Header></Header>
-			<BannerNuestrasInstalaciones></BannerNuestrasInstalaciones>
+			<BannerSociosEstrategicos></BannerSociosEstrategicos>
 			<Footer></Footer>
 		</>
 	)

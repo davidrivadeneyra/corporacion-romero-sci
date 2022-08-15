@@ -182,7 +182,7 @@
 	}
 
 	.li-images {
-		@apply before:content-icon-list before:inline-block before:align-text-top before:mr-2 before:w-5 before:h-5 before:bg-contain p-base;
+		@apply before:content-icon-list before:inline-block before:align-text-top before:mr-2 before:w-4 before:h-4 before:bg-contain lg:before:w-5 lg:before:h-5 p-xs md:p-base text-dark-800;
 	}
 }
 
