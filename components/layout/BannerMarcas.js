@@ -70,14 +70,15 @@ const BannerNuestrasInstalaciones = () => {
 									FM
 								</h3>
 								<p className='p-sm lg:p-base text-dark-500'>
-									Es la abreviación de "Factory Mutual",
-									compañía asegurada que se presenta así misma
-									como proveedor de soluciones de aseguranza
-									"a prueba de fallos". Para tales fines,
-									posee un programa de acreditaciones
-									&lpar;Certificaciones de cumplimiento o Coc,
-									por sus siglas en inglés&rpar; cuyo objetivo
-									final es disminuir los riesgos obtenidos por
+									Es la abreviación de &quot;Factory
+									Mutual&quot;, compañía asegurada que se
+									presenta así misma como proveedor de
+									soluciones de aseguranza "a prueba de
+									fallos". Para tales fines, posee un programa
+									de acreditaciones &lpar;Certificaciones de
+									cumplimiento o Coc, por sus siglas en
+									inglés&rpar; cuyo objetivo final es
+									disminuir los riesgos obtenidos por
 									distintas amenazas; entre ellas, los
 									incendios.
 								</p>
