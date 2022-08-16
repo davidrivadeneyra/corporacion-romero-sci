@@ -36,14 +36,22 @@ const Header = () => {
 									<a>Nuestras instalaciones</a>
 								</Link>
 							</button>
-							<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+							<button className='button-link-dark-sm text-dark-900  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
 								<Link href='/marcas'>
 									<a>Marcas representativas</a>
 								</Link>
 							</button>
-							{/* <button className='button-ghost-dark-sm border-dark-900 hover:bg-dark-900 hover:border-dark-800 text-dark-400 hover:text-dark-100'>
-								<a href='#'>Contáctanos</a>
-							</button> */}
+							<button className='button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'>
+								<Link href='https://www.linkedin.com/company/corporacion-romero-sci/'>
+									<a target='_blank'>Contáctanos</a>
+								</Link>
+
+								<img
+									src='/icons/Linkedin.svg'
+									alt='Ícono de Linkedin'
+									className='h-4'
+								/>
+							</button>
 						</div>
 						<div className='flex items-center md:hidden'>
 							<button>
