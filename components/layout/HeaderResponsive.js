@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-// import { Transition } from '@headlessui/react'
+import { Transition } from '@headlessui/react'
 // import { Link } from 'react-scroll'
-// import Image from 'next/image'
+import Image from 'next/image'
 // import Logo from '../public/streamlineLogo.png'
 
 function Navbar() {
@@ -22,8 +22,7 @@ function Navbar() {
 							<div className='hidden md:block'>
 								<div className='ml-10 flex items-baseline space-x-4'>
 									<Link
-										activeClass='Home'
-										to='about'
+										href='/'
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -31,8 +30,7 @@ function Navbar() {
 										Home
 									</Link>
 									<Link
-										activeClass='about'
-										to='about'
+										href='/'
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -40,8 +38,7 @@ function Navbar() {
 										About
 									</Link>
 									<Link
-										activeClass='work'
-										to='work'
+										href='/'
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -50,8 +47,7 @@ function Navbar() {
 									</Link>
 
 									<Link
-										activeClass='Services'
-										to='work'
+										href='/'
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -60,8 +56,7 @@ function Navbar() {
 									</Link>
 
 									<Link
-										activeClass='contact'
-										to='contact'
+										href='/'
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -115,7 +110,7 @@ function Navbar() {
 					</div>
 				</div>
 
-				<div
+				<Transition
 					show={isOpen}
 					enter='transition ease-out duration-100 transform'
 					enterFrom='opacity-0 scale-95'
@@ -129,8 +124,7 @@ function Navbar() {
 								ref={ref}
 								className='bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3'>
 								<Link
-									href='/home'
-									activeClass='home'
+									href='/'
 									to='home'
 									smooth={true}
 									offset={50}
@@ -139,8 +133,7 @@ function Navbar() {
 									Home
 								</Link>
 								<Link
-									href='/about'
-									activeClass='about'
+									href='/'
 									to='about'
 									smooth={true}
 									offset={50}
@@ -150,8 +143,7 @@ function Navbar() {
 								</Link>
 
 								<Link
-									href='/work'
-									activeClass='work'
+									href='/'
 									to='work'
 									smooth={true}
 									offset={50}
@@ -160,8 +152,7 @@ function Navbar() {
 									Projects
 								</Link>
 								<Link
-									href='/services'
-									activeClass='services'
+									href='/'
 									to='services'
 									smooth={true}
 									offset={50}
@@ -171,8 +162,7 @@ function Navbar() {
 								</Link>
 
 								<Link
-									href='/contact'
-									activeClass='work'
+									href='/'
 									to='work'
 									smooth={true}
 									offset={50}
@@ -183,7 +173,7 @@ function Navbar() {
 							</div>
 						</div>
 					)}
-				</div>
+				</Transition>
 			</nav>
 		</div>
 	)
