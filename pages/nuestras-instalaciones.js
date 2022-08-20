@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Header from '../components/layout/Header'
+import HeaderResponsive from '../components/layout/HeaderResponsive'
 import Footer from '../components/layout/Footer'
 import BannerNuestrasInstalaciones from '../components/layout/BannerNuestrasInstalaciones'
 
@@ -9,7 +9,7 @@ export default function Home() {
 		<>
 			<Head></Head>
 
-			<Header></Header>
+			<HeaderResponsive></HeaderResponsive>
 			<BannerNuestrasInstalaciones></BannerNuestrasInstalaciones>
 			<Footer></Footer>
 		</>

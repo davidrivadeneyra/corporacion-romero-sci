@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Header from '../components/layout/Header'
 import HeaderResponsive from '../components/layout/HeaderResponsive'
 import BannerHome from '../components/layout/BannerHome'
 import SectionLogos from '../components/layout/SectionLogos'
@@ -13,7 +12,6 @@ export default function Home() {
 	return (
 		<>
 			<Head></Head>
-
 			<HeaderResponsive></HeaderResponsive>
 			<BannerHome></BannerHome>
 			<SectionLogos></SectionLogos>

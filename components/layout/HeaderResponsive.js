@@ -1,109 +1,75 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Transition } from '@headlessui/react'
-// import { Link } from 'react-scroll'
-import Image from 'next/image'
-// import Logo from '../public/streamlineLogo.png'
+import MenuIcon from '../icons/MenuIcon'
+import MenuClose from '../icons/MenuClose'
 
-function Navbar() {
+function HeaderResponsive() {
 	const [isOpen, setIsOpen] = useState(false)
 	return (
-		<div>
-			<nav className=' shadow-sm fixed w-full z-10'>
-				<div className='w-full'>
-					<div className='flex items-center h-20 w-full'>
-						<div className='flex items-center  mx-20  justify-between w-full'>
-							<div className='flex justify-center items-center flex-shrink-0 '>
-								<h1 className=' font-bold text-xl cursor-pointer'>
-									Stream
-									<span className='text-blue-500'>line</span>
-								</h1>
-							</div>
-							<div className='hidden md:block'>
-								<div className='ml-10 flex items-baseline space-x-4'>
-									<Link
-										href='/'
-										smooth={true}
-										offset={50}
-										duration={500}
-										className='cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black'>
-										Home
-									</Link>
-									<Link
-										href='/'
-										smooth={true}
-										offset={50}
-										duration={500}
-										className='cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
-										About
-									</Link>
-									<Link
-										href='/'
-										smooth={true}
-										offset={50}
-										duration={500}
-										className='cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
-										Projects
-									</Link>
-
-									<Link
-										href='/'
-										smooth={true}
-										offset={50}
-										duration={500}
-										className='cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
-										Services
-									</Link>
-
-									<Link
-										href='/'
-										smooth={true}
-										offset={50}
-										duration={500}
-										className='cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black'>
-										Contact
-									</Link>
-								</div>
-							</div>
+		<>
+			<nav className='w-full bg-basic-white z-30 fixed'>
+				<div className='section-container'>
+					<div className='header-structure margin-responsive '>
+						<div>
+							<Link href='/'>
+								<img
+									src='img/cr-logo-small-dark.svg'
+									alt='Logo Corporación Romero SCI'
+									className='hidden md:block md:h-16 cursor-pointer'
+								/>
+							</Link>
+							<Link href='/'>
+								<img
+									src='img/cr-logo-small-dark.svg'
+									alt='Logo Corporación Romero SCI'
+									className='h-8 md:hidden cursor-pointer'
+								/>
+							</Link>
 						</div>
-						<div className='mr-10 flex md:hidden '>
+
+						<div className='hidden lg:flex md:gap-2 lg:gap-6'>
+							<Link href='/socios-estrategicos'>
+								<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4'>
+									<a className=''>Socios estrategicos</a>
+								</button>
+							</Link>
+
+							<Link href='/nuestras-instalaciones'>
+								<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+									<a>Nuestras instalaciones</a>
+								</button>
+							</Link>
+
+							<Link href='/marcas'>
+								<button className='button-link-dark-sm text-dark-900  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+									<a>Marcas representativas</a>
+								</button>
+							</Link>
+
+							<Link href='https://www.linkedin.com/company/corporacion-romero-sci/'>
+								<button className='button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'>
+									<a target='_blank'>Contáctanos</a>
+									<img
+										src='/icons/Linkedin.svg'
+										alt='Ícono de Linkedin'
+										className='h-4'
+									/>
+								</button>
+							</Link>
+						</div>
+						<div className='flex items-center md:hidden'>
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type='button'
-								className='bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white'
+								className=''
 								aria-controls='mobile-menu'
 								aria-expanded='false'>
-								<span className='sr-only'>Open main menu</span>
+								{/* <span className='sr-only'>Open main menu</span> */}
 								{!isOpen ? (
-									<svg
-										className='block h-6 w-6'
-										xmlns='http://www.w3.org/2000/svg'
-										fill='none'
-										viewBox='0 0 24 24'
-										stroke='currentColor'
-										aria-hidden='true'>
-										<path
-											strokeLinecap='round'
-											strokeLinejoin='round'
-											strokeWidth='2'
-											d='M4 6h16M4 12h16M4 18h16'
-										/>
-									</svg>
+									<MenuIcon className='fill-dark-700 h-8' />
 								) : (
-									<svg
-										className='block h-6 w-6'
-										xmlns='http://www.w3.org/2000/svg'
-										fill='none'
-										viewBox='0 0 24 24'
-										stroke='currentColor'
-										aria-hidden='true'>
-										<path
-											strokeLinecap='round'
-											strokeLinejoin='round'
-											strokeWidth='2'
-											d='M6 18L18 6M6 6l12 12'
-										/>
-									</svg>
+									<MenuClose className='fill-dark-700 h-8'></MenuClose>
 								)}
 							</button>
 						</div>
@@ -117,66 +83,40 @@ function Navbar() {
 					enterTo='opacity-100 scale-100'
 					leave='transition ease-in duration-75 transform'
 					leaveFrom='opacity-100 scale-100'
-					leaveTo='opacity-0 scale-95'>
+					leaveTo='opacity-0 scale-95'
+					className='absolute z-30 w-full '>
 					{(ref) => (
-						<div className='md:hidden' id='mobile-menu'>
+						<div className='lg:hidden' id='mobile-menu'>
 							<div
 								ref={ref}
-								className='bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-								<Link
-									href='/'
-									to='home'
-									smooth={true}
-									offset={50}
-									duration={500}
-									className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'>
-									Home
+								className='bg-basic-white flex flex-col px-6 items-center py-16 gap-8 drop-shadow-xl'>
+								<Link href='/socios-estrategicos'>
+									<a>Socios estrategicos</a>
 								</Link>
-								<Link
-									href='/'
-									to='about'
-									smooth={true}
-									offset={50}
-									duration={500}
-									className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'>
-									About
+								<Link href='/nuestras-instalaciones'>
+									<a>Nuestras instalaciones</a>
+								</Link>
+								<Link href='/marcas'>
+									<a>Marcas representativas</a>
 								</Link>
 
-								<Link
-									href='/'
-									to='work'
-									smooth={true}
-									offset={50}
-									duration={500}
-									className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'>
-									Projects
-								</Link>
-								<Link
-									href='/'
-									to='services'
-									smooth={true}
-									offset={50}
-									duration={500}
-									className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'>
-									Services
-								</Link>
-
-								<Link
-									href='/'
-									to='work'
-									smooth={true}
-									offset={50}
-									duration={500}
-									className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'>
-									Contact
+								<Link href='https://www.linkedin.com/company/corporacion-romero-sci/'>
+									<div className='w-full justify-center button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'>
+										<a target='_blank'>Contáctanos</a>
+										<img
+											src='/icons/Linkedin.svg'
+											alt='Ícono de Linkedin'
+											className='h-4'
+										/>
+									</div>
 								</Link>
 							</div>
 						</div>
 					)}
 				</Transition>
 			</nav>
-		</div>
+		</>
 	)
 }
 
-export default Navbar
+export default HeaderResponsive

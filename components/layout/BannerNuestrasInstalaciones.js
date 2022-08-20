@@ -4,7 +4,7 @@ import SectionItemsNuestrasInstalaciones from '../../components/layout/SectionIt
 const BannerNuestrasInstalaciones = () => {
 	return (
 		<>
-			<section className='w-full bg-primary-100'>
+			<section className='w-full bg-primary-100 pt-header-fix'>
 				<div className='margin-responsive section-container py-20 md:py-24'>
 					<div className='text-center'>
 						<h1 className='title-h1-movil md:title-h1-desktop pb-4 text-primary-900'>

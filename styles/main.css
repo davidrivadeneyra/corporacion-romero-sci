@@ -18,6 +18,10 @@
 		@apply px-4 md:px-6;
 	}
 
+	.pt-header-fix {
+		@apply pt-16 md:pt-24;
+	}
+
 	.title-big-desktop {
 		@apply font-headings font-bold text-[3rem] leading-[3.5rem] uppercase;
 	}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Close from '../icons/Close'
+import MenuClose from '../icons/MenuClose'
 import ChevronLeft from '../icons/ChevronLeft'
 import ChevronRight from '../icons/ChevronRight'
 
@@ -29,7 +29,7 @@ const Modal = ({
 				<button
 					className='dismiss absolute bottom-16 cursor-pointer rounded-full bg-basic-white opacity-40 p-4'
 					onClick={handleClick}>
-					<Close className='h-6 fill-dark-900 dismiss' />
+					<MenuClose className='h-6 fill-dark-900 dismiss' />
 				</button>
 
 				<button className='absolute left-0 cursor-pointer rounded-xl bg-basic-black hover:opacity-80 opacity-60 p-2'>

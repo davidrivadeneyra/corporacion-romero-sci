@@ -7,7 +7,7 @@ const Header = () => {
 		<>
 			<header className='w-full border-b-2 border-dark-200 bg-basic-white'>
 				<div className='section-container'>
-					<div className='header-structure margin-responsive '>
+					<div className='header-structure margin-responsive'>
 						<div>
 							<Link href='/'>
 								<img

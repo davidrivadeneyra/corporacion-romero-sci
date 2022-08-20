@@ -4,7 +4,7 @@ import SectionLogos from './SectionLogos.js'
 const BannerNuestrasInstalaciones = () => {
 	return (
 		<>
-			<section className='w-full bg-dark-200'>
+			<section className='w-full bg-dark-200 pt-header-fix'>
 				<div className='margin-responsive section-container py-20 md:py-24'>
 					<div className='text-center'>
 						<h1 className='title-h1-movil md:title-h1-desktop pb-4 text-dark-950'>
