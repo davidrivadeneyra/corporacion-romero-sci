@@ -5,13 +5,15 @@ const WhatsAppButtonNavbar = () => {
 	return (
 		<>
 			<Link href='https://wa.me/+51930188276' className=''>
-				<button className='cursor-pointer drop-shadow items-center hover:scale-110 ease-in duration-300 lg:block'>
+				<a
+					target='_blank'
+					className='cursor-pointer drop-shadow items-center hover:scale-110 ease-in duration-300 lg:block'>
 					<img
 						src='/icons/whatsapp.svg'
 						alt=''
 						className='h-10 drop-shadow-md'
 					/>
-				</button>
+				</a>
 			</Link>
 		</>
 	)

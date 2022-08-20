@@ -107,15 +107,19 @@ function HeaderResponsive() {
 									</button>
 								</Link>
 
-								<Link href='https://www.linkedin.com/company/corporacion-romero-sci/'>
-									<div className='w-full justify-center cursor-pointer button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'>
-										<a target='_blank'>Contáctanos</a>
+								<Link
+									href='https://www.linkedin.com/company/corporacion-romero-sci/'
+									passHref>
+									<a
+										className='w-full justify-center cursor-pointer button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'
+										target='_blank'>
+										Contáctanos
 										<img
 											src='/icons/Linkedin.svg'
 											alt='Ícono de Linkedin'
 											className='h-4'
 										/>
-									</div>
+									</a>
 								</Link>
 							</div>
 						</div>
