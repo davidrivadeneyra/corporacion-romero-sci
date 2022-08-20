@@ -90,6 +90,14 @@
 		@apply button-text-sm h-10 rounded-xl px-4;
 	}
 
+	.button-base-link {
+		@apply button-text-base h-12;
+	}
+
+	.button-sm-link {
+		@apply button-text-sm h-10;
+	}
+
 	/* Buttons default */
 
 	.button-default-primary-base {
@@ -104,7 +112,7 @@
 		@apply button-base bg-dark-900 text-basic-white;
 	}
 	.button-default-yellow-base {
-		@apply button-base bg-yellow-500 hover:bg-yellow-600  text-yellow-950;
+		@apply button-base bg-yellow-500 hover:bg-yellow-400  text-yellow-950;
 	}
 
 	.button-ghost-primary-base {
@@ -116,11 +124,11 @@
 	}
 
 	.button-link-primary-base {
-		@apply button-base text-primary-600;
+		@apply button-base-link text-primary-600;
 	}
 
 	.button-link-dark-base {
-		@apply button-base text-dark-700;
+		@apply button-base-link text-dark-700;
 	}
 
 	/* Buttons sm */
@@ -136,7 +144,7 @@
 		@apply button-sm bg-dark-900 text-basic-white;
 	}
 	.button-default-yellow-sm {
-		@apply button-sm bg-yellow-500 hover:bg-yellow-600 text-yellow-950;
+		@apply button-sm bg-yellow-500 hover:bg-yellow-400 text-yellow-950;
 	}
 
 	.button-ghost-primary-sm {
@@ -148,11 +156,11 @@
 	}
 
 	.button-link-primary-sm {
-		@apply button-sm text-primary-600;
+		@apply button-sm-link text-primary-600;
 	}
 
 	.button-link-dark-sm {
-		@apply button-sm text-dark-700;
+		@apply button-sm-link text-dark-700;
 	}
 
 	/* Card content*/

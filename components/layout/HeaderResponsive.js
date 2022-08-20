@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Transition } from '@headlessui/react'
 import MenuIcon from '../icons/MenuIcon'
 import MenuClose from '../icons/MenuClose'
+import WhatsAppButtonNavbar from '../layout/WhatsAppButtonNavbar'
+import LinkedinButtonNavbar from '../layout/LinkedinButtonNavbar'
 
 function HeaderResponsive() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -28,35 +30,34 @@ function HeaderResponsive() {
 							</Link>
 						</div>
 
-						<div className='hidden lg:flex md:gap-2 lg:gap-6'>
-							<Link href='/socios-estrategicos'>
-								<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4'>
-									<a className=''>Socios estrategicos</a>
-								</button>
-							</Link>
+						<div className='hidden lg:flex divide-x divide-dark-300'>
+							<div className='flex md:gap-8 lg:gap-10 pr-8'>
+								<Link href='/socios-estrategicos'>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4'>
+										<a className=''>Socios estrategicos</a>
+									</button>
+								</Link>
+								<Link href='/nuestras-instalaciones'>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+										<a>Nuestras instalaciones</a>
+									</button>
+								</Link>
+								<Link href='/marcas'>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+										<a>Marcas representativas</a>
+									</button>
+								</Link>
+							</div>
 
-							<Link href='/nuestras-instalaciones'>
-								<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
-									<a>Nuestras instalaciones</a>
-								</button>
-							</Link>
-
-							<Link href='/marcas'>
-								<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
-									<a>Marcas representativas</a>
-								</button>
-							</Link>
-
-							<Link href='https://www.linkedin.com/company/corporacion-romero-sci/'>
-								<button className='button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'>
-									<a target='_blank'>Contáctanos</a>
-									<img
-										src='/icons/Linkedin.svg'
-										alt='Ícono de Linkedin'
-										className='h-4'
-									/>
-								</button>
-							</Link>
+							<div className='flex items-center gap-6 pl-8'>
+								<p className='button-text-sm text-dark-600'>
+									Hablemos
+								</p>
+								<div className='flex items-center gap-4'>
+									<LinkedinButtonNavbar></LinkedinButtonNavbar>
+									<WhatsAppButtonNavbar></WhatsAppButtonNavbar>
+								</div>
+							</div>
 						</div>
 						<div className='flex items-center lg:hidden'>
 							<button
@@ -107,7 +108,7 @@ function HeaderResponsive() {
 								</Link>
 
 								<Link href='https://www.linkedin.com/company/corporacion-romero-sci/'>
-									<div className='w-full justify-center button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'>
+									<div className='w-full justify-center cursor-pointer button-default-dark-sm hover:bg-dark-950 text-dark-100 hover:text-dark-100 inline-flex gap-3 items-center hover:scale-105 ease-in duration-300'>
 										<a target='_blank'>Contáctanos</a>
 										<img
 											src='/icons/Linkedin.svg'

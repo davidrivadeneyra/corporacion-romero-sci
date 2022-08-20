@@ -1,15 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 
-const WhatsAppButton = () => {
+const WhatsAppButtonNavbar = () => {
 	return (
 		<>
 			<Link href='https://wa.me/+51930188276' className=''>
-				<button className='fixed z-20 bottom-16 right-6 cursor-pointer drop-shadow-2xl lg:hidden'>
+				<button className='cursor-pointer drop-shadow items-center hover:scale-110 ease-in duration-300 lg:block'>
 					<img
 						src='/icons/whatsapp.svg'
 						alt=''
-						className='h-20 drop-shadow-md'
+						className='h-10 drop-shadow-md'
 					/>
 				</button>
 			</Link>
@@ -17,4 +17,4 @@ const WhatsAppButton = () => {
 	)
 }
 
-export default WhatsAppButton
+export default WhatsAppButtonNavbar

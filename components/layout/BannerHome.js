@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const BannerHome = () => {
 	return (
@@ -15,9 +16,12 @@ const BannerHome = () => {
 						insuperable en sus esfuerzos pioneros para proporcionar
 						una mejor seguridad contra incendios en todo el país.
 					</p>
-					<button className='button-default-yellow-sm md:button-default-yellow-base'>
-						Llámanos al 999 988 798
-					</button>
+					<Link href='tel:+51930188276'>
+						<button className='button-default-yellow-sm md:button-default-yellow-base hover:scale-105 ease-in duration-300'>
+							Llámanos al 930 188 276
+						</button>
+					</Link>
+
 					<div className='flex justify-center pt-10'>
 						<img
 							src='images/cr-circles.png'

@@ -13,6 +13,7 @@ export default function Home() {
 	return (
 		<>
 			<Head></Head>
+			<WhatsAppButton></WhatsAppButton>
 			<HeaderResponsive></HeaderResponsive>
 			<BannerHome></BannerHome>
 			<SectionLogos></SectionLogos>
