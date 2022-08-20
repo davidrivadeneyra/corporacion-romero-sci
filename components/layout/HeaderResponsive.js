@@ -42,7 +42,7 @@ function HeaderResponsive() {
 							</Link>
 
 							<Link href='/marcas'>
-								<button className='button-link-dark-sm text-dark-900  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+								<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
 									<a>Marcas representativas</a>
 								</button>
 							</Link>
@@ -58,7 +58,7 @@ function HeaderResponsive() {
 								</button>
 							</Link>
 						</div>
-						<div className='flex items-center md:hidden'>
+						<div className='flex items-center lg:hidden'>
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type='button'
@@ -91,13 +91,19 @@ function HeaderResponsive() {
 								ref={ref}
 								className='bg-basic-white flex flex-col px-6 items-center py-16 gap-8 drop-shadow-xl'>
 								<Link href='/socios-estrategicos'>
-									<a>Socios estrategicos</a>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4'>
+										<a className=''>Socios estrategicos</a>
+									</button>
 								</Link>
 								<Link href='/nuestras-instalaciones'>
-									<a>Nuestras instalaciones</a>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+										<a>Nuestras instalaciones</a>
+									</button>
 								</Link>
 								<Link href='/marcas'>
-									<a>Marcas representativas</a>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+										<a>Marcas representativas</a>
+									</button>
 								</Link>
 
 								<Link href='https://www.linkedin.com/company/corporacion-romero-sci/'>

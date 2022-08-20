@@ -177,6 +177,10 @@
 		@apply bg-dark-100;
 	}
 
+	body {
+		@apply relative;
+	}
+
 	.colums-photos {
 		@apply columns;
 	}

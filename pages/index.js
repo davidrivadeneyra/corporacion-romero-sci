@@ -7,6 +7,7 @@ import LightBoxServicesUp from '../components/layout/LightBoxServicesUp'
 import LightBoxServicesDown from '../components/layout/LightBoxServicesDown'
 import LightBoxTile from '../components/layout/LightBoxTile'
 import Footer from '../components/layout/Footer'
+import WhatsAppButton from '../components/layout/WhatsAppButton'
 
 export default function Home() {
 	return (
