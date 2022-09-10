@@ -11,7 +11,12 @@ const WhatsAppButtonNavbar = () => {
 				<a
 					target='_blank'
 					className='cursor-pointer drop-shadow items-center hover:scale-110 ease-in duration-300 lg:block'>
-					<FacebookIcon className='h-10 fill-[#0077B7] bg-basic-white drop-shadow-md'></FacebookIcon>
+					<img
+						src='/icons/facebook.svg'
+						alt=''
+						className='h-10 drop-shadow-md'
+					/>
+					{/* <FacebookIcon className='h-10 fill-[#0077B7] bg-basic-white drop-shadow-md'></FacebookIcon> */}
 				</a>
 			</Link>
 		</>
