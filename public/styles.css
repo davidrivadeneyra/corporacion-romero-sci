@@ -1150,6 +1150,10 @@ body{
 .text-center{
   text-align: center;
 }
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
 .font-semibold{
   font-weight: 600;
 }
@@ -1223,6 +1227,10 @@ body{
 .text-primary-100{
   --tw-text-opacity: 1;
   color: rgba(var(--primary-100), var(--tw-text-opacity));
+}
+.text-dark-300{
+  --tw-text-opacity: 1;
+  color: rgba(var(--dark-300), var(--tw-text-opacity));
 }
 .opacity-0{
   opacity: 0;

@@ -5,6 +5,7 @@ import MenuIcon from '../icons/MenuIcon'
 import MenuClose from '../icons/MenuClose'
 import WhatsAppButtonNavbar from '../layout/WhatsAppButtonNavbar'
 import LinkedinButtonNavbar from '../layout/LinkedinButtonNavbar'
+import FacebookButtonNavbar from '../layout/FacebookButtonNavbar'
 
 function HeaderResponsive() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -50,10 +51,11 @@ function HeaderResponsive() {
 							</div>
 
 							<div className='flex items-center gap-6 pl-8'>
-								<p className='button-text-sm text-dark-600'>
+								<p className='text-sm text-dark-500'>
 									Hablemos
 								</p>
 								<div className='flex items-center gap-4'>
+									<FacebookButtonNavbar></FacebookButtonNavbar>
 									<LinkedinButtonNavbar></LinkedinButtonNavbar>
 									<WhatsAppButtonNavbar></WhatsAppButtonNavbar>
 								</div>
@@ -107,7 +109,13 @@ function HeaderResponsive() {
 									</button>
 								</Link>
 
-								<Link
+								<div className='flex items-center gap-6'>
+									<FacebookButtonNavbar></FacebookButtonNavbar>
+									<LinkedinButtonNavbar></LinkedinButtonNavbar>
+									{/* <WhatsAppButtonNavbar></WhatsAppButtonNavbar> */}
+								</div>
+
+								{/* <Link
 									href='https://www.linkedin.com/company/corporacion-romero-sci/'
 									passHref>
 									<a
@@ -120,7 +128,7 @@ function HeaderResponsive() {
 											className='h-4'
 										/>
 									</a>
-								</Link>
+								</Link> */}
 							</div>
 						</div>
 					)}
