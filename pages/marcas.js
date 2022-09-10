@@ -8,7 +8,13 @@ import WhatsAppButton from '../components/layout/WhatsAppButton'
 export default function Home() {
 	return (
 		<>
-			<Head></Head>
+			<Head>
+				<title>Marcas - Somos Corporación Romero SCI</title>
+				<meta
+					name='viewport'
+					content='initial-scale=1.0, width=device-width'
+				/>
+			</Head>
 			<WhatsAppButton></WhatsAppButton>
 			<HeaderResponsive></HeaderResponsive>
 			<BannerMarcas></BannerMarcas>

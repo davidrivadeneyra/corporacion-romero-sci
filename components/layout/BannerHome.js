@@ -12,7 +12,7 @@ const BannerHome = () => {
 					</h1>
 					<p className='p-sm md:p-base text-yellow-800 text-center pb-8'>
 						Con productos de calidad, innovación constante y
-						excelente atención al cliente, CORPORACION ROMERO SCI es
+						excelente atención al cliente, CORPORACIÓN ROMERO SCI es
 						insuperable en sus esfuerzos pioneros para proporcionar
 						una mejor seguridad contra incendios en todo el país.
 					</p>
