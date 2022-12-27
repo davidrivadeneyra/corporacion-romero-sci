@@ -4,13 +4,15 @@ import Link from 'next/link'
 const BannerHome = () => {
 	return (
 		<>
-			<section className='w-full bg-yellow-200 pt-header-fix'>
+			<section className='w-full bg-gradient-red pt-header-fix'>
 				<div className='margin-responsive section-container pt-16 pb-[100px] text-center relative'>
-					<h1 className='title-h1-movil md:title-big-desktop   text-center pb-4 text-yellow-900 '>
-						Somos especialistas comprometidos <br />
-						con tu seguridad
+					<h1 className='title-h1-movil md:title-big-desktop   text-center pb-4 text-primary-500 '>
+						Somos especialistas <br />
+						<span className='text-dark-900'>
+							comprometidos con tu seguridad
+						</span>
 					</h1>
-					<p className='p-sm md:p-base text-yellow-800 text-center pb-8'>
+					<p className='p-sm md:p-base text-dark-700 text-center pb-8'>
 						Con productos de calidad, innovación constante y
 						excelente atención al cliente, CORPORACIÓN ROMERO SCI es
 						insuperable en sus esfuerzos pioneros para proporcionar
@@ -21,23 +23,31 @@ const BannerHome = () => {
 							Llámanos al 930 188 276
 						</button>
 					</Link>
-
-					<div className='flex justify-center pt-10'>
-						<img
-							src='images/cr-circles.png'
-							alt='Foto de los trabajos que hace Corporación Romero SCI'
-							className='absolute'
-						/>
+					<div className='pt-12'>
+						<video
+							controls
+							className='aspect-video max-h-96 m-auto rounded-xl '
+							src='video/cr-video.mp4'></video>
 					</div>
 				</div>
 			</section>
-			<section className='w-full pt-[100px]'>
-				<div className='section-container'>
-					<img
-						src='images/cr-photo-capacitacion.png'
-						alt='Foto de los trabajos que hace Corporación Romero SCI'
-						className='block'
-					/>
+			<section className='w-full bg-primary-800 text-center'>
+				<div className='margin-responsive section-container py-20'>
+					<p className='text-primary-100 italic text-[1.25rem]'>
+						Según el Cuerpo General de Bomberos Voluntarios del Perú
+						en lo que va del año se han reportado más de 58mil
+						incendios en todo el Perú.
+					</p>
+				</div>
+			</section>
+			<section className='w-full bg-dark-100 text-center'>
+				<div className='margin-responsive section-container py-20'>
+					<h1 className='title-h2-movil md:title-h1-desktop   text-center pb-4 text-dark-900'>
+						Una mirada a nuestro <br />
+						<span className='text-primary-500'>
+							campo de entrenamiento
+						</span>
+					</h1>
 				</div>
 			</section>
 		</>

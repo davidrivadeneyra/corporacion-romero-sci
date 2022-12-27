@@ -200,6 +200,14 @@
 	.li-images {
 		@apply before:content-icon-list before:inline-block before:align-text-top before:mr-2 before:w-4 before:h-4 before:bg-contain lg:before:w-5 lg:before:h-5 p-xs md:p-base text-dark-800;
 	}
+
+	.bg-gradient-red {
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(227, 43, 48, 0.14) 100%
+		);
+	}
 }
 
 :root {
