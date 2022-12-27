@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import HeaderResponsive from '../components/layout/HeaderResponsive'
 import BannerHome from '../components/layout/BannerHome'
+import Sliders from '../components/layout/Sliders'
 import SectionLogos from '../components/layout/SectionLogos'
 import LightBoxServicesUp from '../components/layout/LightBoxServicesUp'
 import LightBoxServicesDown from '../components/layout/LightBoxServicesDown'
@@ -24,6 +25,7 @@ export default function Home() {
 			<WhatsAppButton></WhatsAppButton>
 			<HeaderResponsive></HeaderResponsive>
 			<BannerHome></BannerHome>
+			<Sliders></Sliders>
 			<SectionLogos></SectionLogos>
 			<LightBoxServicesUp></LightBoxServicesUp>
 			<LightBoxTile></LightBoxTile>

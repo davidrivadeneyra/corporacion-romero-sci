@@ -40,16 +40,6 @@ const BannerHome = () => {
 					</p>
 				</div>
 			</section>
-			<section className='w-full bg-dark-100 text-center'>
-				<div className='margin-responsive section-container py-20'>
-					<h1 className='title-h2-movil md:title-h1-desktop   text-center pb-4 text-dark-900'>
-						Una mirada a nuestro <br />
-						<span className='text-primary-500'>
-							campo de entrenamiento
-						</span>
-					</h1>
-				</div>
-			</section>
 		</>
 	)
 }
