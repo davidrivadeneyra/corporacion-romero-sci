@@ -48,6 +48,11 @@ function HeaderResponsive() {
 										<a>Marcas representativas</a>
 									</button>
 								</Link>
+								<Link href='/mision'>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+										<a>Misión y Visión</a>
+									</button>
+								</Link>
 							</div>
 
 							<div className='flex items-center gap-6 pl-8'>
@@ -106,6 +111,11 @@ function HeaderResponsive() {
 								<Link href='/marcas'>
 									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
 										<a>Marcas representativas</a>
+									</button>
+								</Link>
+								<Link href='/mision'>
+									<button className='button-link-dark-sm text-dark-700  hover:text-dark-900 hover:underline hover:underline-offset-4 '>
+										<a>Misión y Visión</a>
 									</button>
 								</Link>
 

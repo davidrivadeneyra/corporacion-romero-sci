@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionItemsNuestrasInstalaciones from '../../components/layout/SectionItemsNuestrasInstalaciones'
+import SectionItemsNuestrasInstalaciones from './SectionItemsNuestrasInstalaciones'
 
 const BannerNuestrasInstalaciones = () => {
 	return (
