@@ -23,7 +23,7 @@ export default function Home() {
 				/>
 				<meta
 					name='Somos Corporación Romero SCI, especialistas comprometidos con tu seguridad'
-					content='images/cr-og-corporacion-romero.jpg'
+					content='https://corporacionromerosci.com/images/cr-og-corporacion-romero.jpg'
 					property='og:image'
 				/>
 			</Head>
