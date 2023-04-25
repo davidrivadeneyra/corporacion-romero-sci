@@ -21,6 +21,11 @@ export default function Home() {
 					name='viewport'
 					content='initial-scale=1.0, width=device-width'
 				/>
+				<meta
+					name='Somos Corporación Romero SCI, especialistas comprometidos con tu seguridad'
+					content='images/cr-og-corporacion-romero.jpg'
+					property='og:image'
+				/>
 			</Head>
 			<WhatsAppButton></WhatsAppButton>
 			<HeaderResponsive></HeaderResponsive>
