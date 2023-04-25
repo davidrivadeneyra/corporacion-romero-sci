@@ -27,6 +27,11 @@ const Footer = () => {
 								<a>Marcas representativas</a>
 							</button>
 						</Link>
+						<Link href='/mision'>
+							<button className='button-link-dark-sm text-primary-200  hover:text-basic-white hover:underline hover:underline-offset-4 '>
+								<a>Misión y Visión</a>
+							</button>
+						</Link>
 					</div>
 				</div>
 			</section>
