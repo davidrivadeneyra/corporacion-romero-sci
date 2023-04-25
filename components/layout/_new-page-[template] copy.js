@@ -9,7 +9,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>
-					'Aquí va el nombre de tu página' - Somos Corporación Romero
+					Aquí va el nombre de tu página - Somos Corporación Romero
 					SCI
 				</title>
 				<meta

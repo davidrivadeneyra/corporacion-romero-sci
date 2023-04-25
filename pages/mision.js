@@ -9,10 +9,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>
-					'Aquí va el nombre de tu página' - Somos Corporación Romero
-					SCI
-				</title>
+				<title>Misión y Visión - Somos Corporación Romero SCI</title>
 				<meta
 					name='viewport'
 					content='initial-scale=1.0, width=device-width'
