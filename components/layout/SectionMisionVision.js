@@ -74,7 +74,7 @@ const SectionMisionVision = () => {
 										trabajo inseguro
 									</a>
 								</Link>
-								<Link href='documents/politica-a-la-negacion-de-realizar-trabajo-inseguro.pdf'>
+								<Link href='documents/politica-de-medioambiente.pdf'>
 									<a
 										className='
 								flex gap-2 items-center text-dark-700  hover:text-primary-700 hover:underline hover:underline-offset-4'
@@ -87,7 +87,7 @@ const SectionMisionVision = () => {
 										Política de medio ambiente
 									</a>
 								</Link>
-								<Link href='documents/politica-a-la-negacion-de-realizar-trabajo-inseguro.pdf'>
+								<Link href='documents/politica-de-seguridad-corp-romero-sci.pdf'>
 									<a
 										className='
 								flex gap-2 items-center text-dark-700  hover:text-primary-700 hover:underline hover:underline-offset-4'
@@ -102,7 +102,7 @@ const SectionMisionVision = () => {
 								</Link>
 							</div>
 							<div className=' flex flex-col gap-4'>
-								<Link href='documents/politica-a-la-negacion-de-realizar-trabajo-inseguro.pdf'>
+								<Link href='documents/politica-de-consumo-de-drogas-y-alcohol-en-el-entorno-de-trabajo.pdf'>
 									<a
 										className='
 								flex gap-2 items-center text-dark-700  hover:text-primary-700 hover:underline hover:underline-offset-4'
@@ -116,7 +116,7 @@ const SectionMisionVision = () => {
 										en el entorno de trabajo
 									</a>
 								</Link>
-								<Link href='documents/politica-a-la-negacion-de-realizar-trabajo-inseguro.pdf'>
+								<Link href='documents/politica-de-prevencion-del-acoso-laboral-y-riesgo-psicosocial.pdf'>
 									<a
 										className='
 								flex gap-2 items-center text-dark-700  hover:text-primary-700 hover:underline hover:underline-offset-4'
@@ -130,7 +130,7 @@ const SectionMisionVision = () => {
 										y riesgo psicosocial
 									</a>
 								</Link>
-								<Link href='documents/politica-a-la-negacion-de-realizar-trabajo-inseguro.pdf'>
+								<Link href='documents/politica-de-seguridad-y-salud-laboral.pdf'>
 									<a
 										className='
 								flex gap-2 items-center text-dark-700  hover:text-primary-700 hover:underline hover:underline-offset-4'
